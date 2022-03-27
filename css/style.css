@@ -1,18 +1,33 @@
-body {
-	background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
-	background-size: 400% 400%;
-	animation: gradient 15s ease infinite;
-	height: 100vh;
+:root{
+    --bg-light: #f7f4ec;
+    --bg-dark: #2c2727;
+    --font-roboto: 'Roboto', sans-serif;
+    --font-ubuntu: 'Ubuntu', sans-serif;
 }
 
-@keyframes gradient {
-	0% {
-		background-position: 0% 50%;
-	}
-	50% {
-		background-position: 100% 50%;
-	}
-	100% {
-		background-position: 0% 50%;
-	}
+/* font-family: 'Roboto', sans-serif;
+font-family: 'Ubuntu', sans-serif; */
+
+body {
+    background-color: var(--bg-light);
+    font-family: var(--font-roboto)
 }
+
+h1, h2, h3, h4, h5 {
+    color: var(--bg-dark);
+    font-family: var(--font-ubuntu)
+}
+
+h1{
+    font-size: 5rem;
+}
+
+.content {
+    padding: 10px;
+}
+
+.content h1{
+    text-align: center;
+}
+
+
